@@ -13,6 +13,10 @@ document.addEventListener("DOMContentLoaded", function(event)
         template: './signup.html', 
         view: new SignupView()
     });
+    mvc.addRoute({
+        url: '/home', 
+        template: 'hello.html', 
+    });
     mvc.run();
     
 });

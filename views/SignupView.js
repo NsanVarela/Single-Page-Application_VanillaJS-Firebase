@@ -7,9 +7,9 @@ export default class signupView
     {
         // console.log('Ca se passe ici !');
         let userModel = new UserModel;
-        let form = dom.getFormFields(['InputEmail1', 'InputPassword1']);
+        let form = dom.getFormFields(['InputFirstName1', 'InputLastName1', 'InputEmail1', 'InputPassword1']);
         // console.log(form['InputEmail1', 'InputPassword1']);
-        userModel.signUp(null, null, form['InputEmail1'], form['InputPassword1'])
+        userModel.signUp(form['InputFirstName1'], form['InputLastName1'], form['InputEmail1'], form['InputPassword1'])
         
     }
 
