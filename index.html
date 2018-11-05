@@ -19,19 +19,28 @@
 
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand">Paris Events</a>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <form action="#" novalidate id="formSearch" class="form-inline">
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <div class="form-group">
+                <label for="searchText">Rechercher un événement Parisien :</label>
+                <input type="search" id="searchText" autofocus placeholder="e.g. Rock, Danse, Fête, Sport ..." class="form-control">
+            </div>
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </nav>
 
 
-    <main>
-        
+    <main class="container">
+        <h1>Liste des résultats</h1>
+        <div class="row" id="searchResults">
+            <!-- Emplacement des futurs résultats de la recherche, qui seront placés ici en Ajax -->
+
+        </div>
     </main>
 
     
 
     <script type="module" src="./app/index.js"></script>
+    <script src="./app/main.js"></script>
 </body>
 </html>
